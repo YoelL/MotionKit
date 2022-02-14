@@ -18,7 +18,10 @@ struct ShakeGeometryEffect: GeometryEffect {
     }
 }
 
-public extension View {
+extension View {
+    /// Shake effect animation
+    /// - Parameter n: The amount of shakes the view will shake
+    /// in an animation duration time frame
     public func shakeEffect(_ n: Int) -> some View {
         modifier(ShakeGeometryEffect(animatableData: CGFloat(n)))
     }

@@ -30,7 +30,10 @@ struct BounceGeometryEffect: GeometryEffect {
     }
 }
 
-public extension View {
+extension View {
+
+    /// Bounce effect animation
+    /// - Parameter n: The amount of bounces the view will bounce.
     public func bounceEffect(_ n: Int) -> some View {
         modifier(BounceGeometryEffect(times: n))
     }
