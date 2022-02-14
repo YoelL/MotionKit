@@ -2,7 +2,7 @@
 
 ## Installation
 
-To install this package, import `url here` in Swift Package Manager.
+To install this package, import `https://github.com/YoelL/MotionKit` in Swift Package Manager.
 
 ## Usage Example
 
