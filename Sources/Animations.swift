@@ -8,7 +8,7 @@
 import SwiftUI
 
 public var debugAnimations = false
-extension Animation {
+public extension Animation {
     public static var shake: Animation {
         if debugAnimations {
             return Animation.easeInOut(duration: 3.0)

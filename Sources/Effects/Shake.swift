@@ -18,7 +18,7 @@ struct Shake: GeometryEffect {
     }
 }
 
-extension View {
+public extension View {
     public func shakeEffect(_ n: Int) -> some View {
         modifier(Shake(animatableData: CGFloat(n)))
     }
