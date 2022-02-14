@@ -32,7 +32,7 @@ public struct BounceGeometryEffect: GeometryEffect {
 
 public extension View {
     public func bounceEffect(_ n: Int) -> some View {
-        modifier(BounceEffect(times: n))
+        modifier(BounceGeometryEffect(times: n))
     }
 }
 

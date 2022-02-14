@@ -20,6 +20,6 @@ struct ShakeGeometryEffect: GeometryEffect {
 
 public extension View {
     public func shakeEffect(_ n: Int) -> some View {
-        modifier(Shake(animatableData: CGFloat(n)))
+        modifier(ShakeGeometryEffect(animatableData: CGFloat(n)))
     }
 }
