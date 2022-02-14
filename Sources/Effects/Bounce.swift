@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BounceEffect: GeometryEffect {
+public struct BounceGeometryEffect: GeometryEffect {
     var height: CGFloat
     var times: CGFloat
 
