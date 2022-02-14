@@ -11,7 +11,7 @@ public struct BounceGeometryEffect: GeometryEffect {
     var height: CGFloat
     var times: CGFloat
 
-    init(height: CGFloat = 50, times: Int) {
+    public init(height: CGFloat = 50, times: Int) {
         self.times = CGFloat(times)
         self.height = height
     }
