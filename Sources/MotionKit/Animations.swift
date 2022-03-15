@@ -32,7 +32,7 @@ extension Animation {
             return Animation.spring(response: 0.4, dampingFraction: 0.8, blendDuration: 1.0)
         }
     }
-    
+
     public static var bounce: Animation {
         if debugAnimations {
             return Animation.spring(response: 5, dampingFraction: 0.5)
@@ -40,5 +40,8 @@ extension Animation {
             return Animation.spring(response: 1, dampingFraction: 0.5)
         }
     }
-    
+
+    public static var breath: Animation {
+        return Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true)
+    }
 }
