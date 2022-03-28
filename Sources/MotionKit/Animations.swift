@@ -44,4 +44,8 @@ extension Animation {
     public static var breath: Animation {
         return Animation.easeInOut(duration: 1.0).repeatForever(autoreverses: true)
     }
+    
+    public static var breathOnce: Animation {
+        return Animation.easeInOut(duration: 0.4).repeatCount(1, autoreverses: true)
+    }
 }
