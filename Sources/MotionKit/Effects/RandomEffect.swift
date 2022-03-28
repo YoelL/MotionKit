@@ -39,7 +39,7 @@ struct RandomAnimationModifier: ViewModifier {
 
 // MARK: - View Extension
 extension View {
-    func randomAnimation(value: Binding<Bool>) -> some View {
+    public func randomAnimation(value: Binding<Bool>) -> some View {
         self.modifier(RandomAnimationModifier(animate: value))
     }
 }
