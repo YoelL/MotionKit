@@ -11,7 +11,7 @@ struct RandomAnimationModifier: ViewModifier {
     @Binding var animate: Bool
 
     func body(content: Content) -> some View {
-        switch Int.random(in: 1...4) {
+        switch Int.random(in: 0...4) {
         case 0:
             content
                 .bounceEffect(animate ? 1 : 0)
