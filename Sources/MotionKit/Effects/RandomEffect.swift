@@ -11,24 +11,20 @@ struct RandomAnimationModifier: ViewModifier {
     @Binding var animate: Bool
 
     func body(content: Content) -> some View {
-        switch Int.random(in: 0...4) {
+        switch Int.random(in: 0...3) {
         case 0:
             content
                 .bounceEffect(animate ? 1 : 0)
                 .animation(.bounce, value: animate)
         case 1:
             content
-                .breathEffect($animate)
+                .rollEffect($animate)
         case 2:
             content
                 .rotateEffect($animate)
         case 3:
             content
                 .flipEffect($animate)
-        case 4:
-            content
-                .shakeEffect(animate ? 1 : 0)
-                .animation(.shake, value: animate)
         default:
             content
                 .bounceEffect(animate ? 1 : 0)
